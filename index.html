@@ -13,7 +13,7 @@
    
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-flamingo-green fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-light bg-success fixed-top" id="navigation">
             <a class="navbar-brand" href="#"><img src="img/flamingologo.png" width="30" height="30" class="d-inline-block align-top mr-1" alt="Flamingo logo"> <span class="d-none d-sm-inline">Flamingo Graduating Class 2021</span><span class="d-sm-none d-inline">FNPSS Class Of 2021</span></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,23 +38,27 @@
             </div>
         </nav>
     </header>
-    <main>
-        <section class="intro" id="intro">
-            <h1>Flamingo Nursery, Primary & Secondary School Ibrahim Bako Bauchi Nigeria <span class="below">Graduating Class 2021</span></h2>
+    <main class="bg-flamingo">
+        <section class="intro main" id="intro">
+            <h1> <span class="above">Flamingo Nursery, Primary & Secondary School Ibrahim Bako Bauchi Nigeria</span> <span class="below">Graduating Class 2021</span></h2>
         </section>
-        <section class="students" id="students">
+        <section class="students ma.in" id="students">
             <h2>Graduating Students</h2>
+            <div class="grad-students">
+                
+            </div>
         </section>
-        <section class="about">
+        <section class="about main"id="about" >
             <h2>About Us</h2>
-            <section>
+            <section class="school">
                 <h3>Flamingo Nursery Primary & Second School Bauchi</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi voluptate molestiae rem accusantium, expedita nesciunt quaerat animi? Dolore cumque perspiciatis temporibus! Delectus, porro alias! Nihil hic repudiandae ut ratione pariatur!</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque expedita nobis dignissimos optio eius blanditiis tempora eum, nostrum, a magnam amet excepturi quod aliquam nam sunt modi placeat aut quas.</p>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt, aut commodi. Placeat harum eveniet ratione perferendis odio alias hic consequatur expedita, ab officiis, tenetur odit praesentium eligendi minus neque. Dolores!</p>
+                <p class="author">Musa Ibrahim</p>
             </section>
 
-            <section>
+            <section class="class">
                 <h3>Flamingo Graduating Class 2021</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi voluptate molestiae rem accusantium, expedita
                     nesciunt quaerat animi? Dolore cumque perspiciatis temporibus! Delectus, porro alias! Nihil hic repudiandae ut
@@ -64,18 +68,102 @@
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt, aut commodi. Placeat harum eveniet ratione
                     perferendis odio alias hic consequatur expedita, ab officiis, tenetur odit praesentium eligendi minus neque.
                     Dolores!</p>
+                <p class="author" aria-roledescription="a link to the author">Musa Ibrahim</p>
             </section>
         </section>
-        <section class="credits" id="credits">
+        <section class="credits main" id="credits">
             <h2>Appreciations And Credit</h2>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur esse asperiores expedita ex hic aliquam repudiandae distinctio quaerat unde. Unde eum, sequi commodi quae iure natus dolor incidunt voluptas rerum.</p>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur esse asperiores expedita ex hic aliquam repudiandae distinctio quaerat unde. Unde eum, sequi commodi quae iure natus dolor incidunt voluptas rerum.</p>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur esse asperiores expedita ex hic aliquam repudiandae distinctio quaerat unde. Unde eum, sequi commodi quae iure natus dolor incidunt voluptas rerum.</p>
+            <p class="author" data-toggle="modal" data-id="23" data-target="#studentProfileModal">Musa Ibrahim</p>
         </section>
     </main>
-    <footer>
-        
-    </footer>
+    
+    <aside>
+        <!-- Modal -->
+        <div class="modal fade" id="studentProfileModal" tabindex="-1" role="dialog" aria-labelledby="studentProfileModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg " role="document">
+                <div class="modal-content">
+                    <div class="modal-header bg-flamingo">
+                        <h5 class="modal-title" id="studentProfileModalLabel">Student Profile</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body bg-flamingo">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-sm-3 col-md-4 col-6 student-picture"></div>
+                                <div class="col-sm-7 col-md-8 col-6">
+                                    <div class="row">
+                                        <div class="col-sm-5 col-lg-4">
+                                            <p class="title">Name : </p>
+                                        </div>
+                                        <div class="col-sm-7 col-lg-8">
+                                            <p class="description md-name">Bennet Hassan</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-5 col-lg-4">
+                                            <p class="title">Nickname : </p>
+                                        </div>
+                                        <div class="col-sm-7 col-lg-8">
+                                            <p class="description md-nickname">Benditino</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-5 col-lg-4">
+                                            <p class="title">Phone_No : </p>
+                                        </div>
+                                        <div class="col-sm-7 col-lg-8">
+                                            <p class="description md-phone_no">08121345667</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-5 col-lg-4">
+                                            <p class="title">Email : </p>
+                                        </div>
+                                        <div class="col-sm-7 col-lg-8">
+                                            <p class="description md-email">Bennethassan@mail.com</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-5  col-lg-4">
+                                            <p class="title">Position held : </p>
+                                        </div>
+                                        <div class="col-sm-7 col-lg-8">
+                                            <p class="description md-position_held">Labour Prefect</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-5 col-lg-4">
+                                            <p class="title">Aspiration : </p>
+                                        </div>
+                                        <div class="col-sm-7 col-lg-8">
+                                            <p class="description md-aspiration">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor minima repudiandae explicabo quidem quasi dolore eum! Qui eligendi quidem, tenetur </p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-5 col-lg-4">
+                                            <p class="title">Hobbies : </p>
+                                        </div>
+                                        <div class="col-sm-7 col-lg-8">
+                                            <p class="description md-hobbies">esciunt deleniti debitis!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </aside>
+   
     <script src="js/app.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

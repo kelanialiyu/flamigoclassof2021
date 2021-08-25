@@ -1,3 +1,4 @@
+/* universal style */
 body{
     font-size: 100%;
     background-color: rgb(250, 246, 246);
@@ -11,67 +12,228 @@ h2{
     font-size: 1.2rem;
     font-weight: bold;
     text-align: center;
-    text-decoration: underline;
+    text-transform: capitalize;
 }
 h3{
     font-size: 1.2rem;
     text-align: center;
 }
+p{
+    font-size: 1rem;
+    text-align: justify;
+}
 main{
     padding-top:4rem; 
-    background-color:rgb(0, 255, 42);   
+    background-color:rgb(255, 255, 255);   
+    max-width: 100vw;
 }
-.bg-flamingo-green{
-    background-color: green;
+
+/* introduction style */
+.bg-flamingo{
+    background-color: #38c572;
 }
 .intro{
-    background-color:rgb(0, 255, 42);
     height:calc(100vh - 4rem);
-    background-image: url(../img/graduate.jpg);
+    background-image: url(../img/graduating.jpg);
     background-repeat: no-repeat;
-    background-position: center 14vh;
-    background-size: 100% 66vh;
+    background-position: center 21vh;
+    background-size: 100%  50vh;
     position: relative;
 }
-.intro h1{
+.intro h1 span.above{
+    display:block;
+    padding: 3vh 3vw;
+    padding-top:2vh;
     text-align: center;
-    text-shadow: rgb(8, 70, 8) 1px 1px 2px; 
+    /* width: 100vw; */
+    margin: 0;
 }
-.intro h1 span{
+.intro h1 span.below{
+    font-family:cursive;
+    font-size: 1.25rem;
     font-weight: normal;
     /* font-style: italic; */
     text-transform:lowercase;
     display: block;
     text-align: center;
     position: absolute;
-    bottom: 2vh;
-    width: 100%;
-    margin:auto;
+    bottom: 6vh;
+    width: 97vw;
+    text-transform: uppercase;
+    margin: 0;
+    font-weight: bold;
+    padding: 0;
 }
 
 .students{
     margin: 1vh 0;
-    padding: 3vh 2vw;
+    padding:4vh 1.5vw;
+    background-color:white;
+}
+.students h2{
+    margin:0;
+    text-transform: uppercase;
+}
+.grad-students{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    padding:2vh 0.5vw;
+}
+.grad-student{
+    min-width: 12rem;
+    min-height: 14rem;
+    margin:2vh 1vw;
+}
+.grad-student .headshot{
+    background-color: rgb(40, 245, 13);
+    width:100%;
+    height: 90%;
+    border-radius:15%;
+    background-image: url(../img/headshot.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.grad-student .name{
+    margin: 0;
+    margin-top: .25rem;
+    text-align:center;
+    color:white;
+    background-color: #3a5a3a;
+}
+
+/* about section */
+
+.about{
+    position: relative;
+    color:black;
+    margin: 1vh 0;
+    padding: 3vh 3vw;
+    /* background-image: url(../img/flamingologo.png); */
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment:scroll;
+    text-align:left;
+    background-color: #609760;
+}
+.about h2{
+    text-transform: uppercase;
+    margin-top: 1vh;
+    margin-bottom: 2vh;
+}
+.about h3{
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    text-align: center;
+}
+.author{
+    text-align:right;
+    color:rgb(6, 8, 6);
+    font-size:0.9rem;
+    font-style: italic;
+    padding-top: 0;
+    margin-top: 0;
+    font-weight: 600;
+}
+.author:hover{
+    text-decoration: underline;
+}
+.author::before{
+    content: "BY : ";
+}
+.credits{
+    color:rgb(3, 56, 3);
     background-color: white;
+    margin: 1vh 0;
+    padding: 3vh 2vw;
+}
+footer{
+    display: flex;
+    background-color: black;
+    color: white;
+}
+
+footer h1{
+    font-size: 1rem;
+}
+
+/* modal styling */
+.student-picture{
+    background-image: url(../img/graduate-picture.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.title{
+    font-size: 0.8rem;
+    text-align: left;
+    font-weight: bold;
+}
+.description{
+    font-size: .7rem;
+    word-wrap: break-word;
 }
 @media screen and (min-width:576px){
     .intro{
-        background-position: center 8vh;
-        background-size: 100% 75vh;
+        background-position: center 11vh;
+        background-size: 100% 75%;
     }
-
+    .intro h1 span.below{
+        bottom: 4vh;
+        font-size: 1.6rem;
+        
+    }
+    .title{
+        font-size: .9rem;
+        text-align:right;
+    }
+    .description{
+        font-size: .8rem;
+    }
 }
 
-@media screen and (min-width:900px){
+@media screen and (min-width:1024px){
     h1{
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
     .intro{
-        background-position: center 5vh;
-        background-size: 100% calc( 92vh - 6rem);
+        background-position: center 6.5vh;
+        background-size: 100% 83%;
     }
-    .intro h1 span{
-        bottom: 2vh;
+    .intro h1 span.below{
+        bottom: 1.5vh;
+        font-size: 1.8rem;
+    }
+    .students{
+        margin: 1vh 0;
+        padding:4vh 1.5vw;
+        background-color:white;
+    }
+    .students h2{
+        margin:0;
+        text-transform: uppercase;
+    }
+    .grad-student{
+        min-width: 13rem;
+        min-height: 16rem;
+    }
+    .grad-student .headshot{
+        height: 85%;
+    }
+    .grad-student .name{
+        margin: 0;
+        margin-top: 3%;
+        height: 12%;
+        padding:0;
+        line-height: 2;
+    }
+    .title{
+        font-size: 1rem;
+    }
+    .description{
+        font-size: .985rem;
     }
 
 }
